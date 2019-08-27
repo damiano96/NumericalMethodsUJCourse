@@ -42,10 +42,10 @@ double method_Simpson(double a, double b, double (*f)(double)) {
         integral = h/6.0 * (sum + 4.0 * sum4 + 2.0 * sum2 );
     } while (fabs(integral - prevIntegral) > E);
     std::cout << "Metoda Simpsona - liczba iteracji: " << intervals << " - \t";
-	return integral;
+    return integral;
 }
 double method_threeAndEight(double a, double b, double (*f)(double)) { 
-	double sum = f(a) + f(b);
+    double sum = f(a) + f(b);
     double sum_copy = sum;
     double prevIntegral, integral = 0.0; 
     int intervals = 0;
